@@ -1,0 +1,100 @@
+----------------------------------------------------------------------
+running basic locate tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+running advanced locate tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+running basic route tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+running advanced route tests
+----------------------------------------------------------------------
+
+some tests failed
+
+Failed test: 0-step route
+    let tp = TripPlanner(
+      [[0, 0, 1, 0]],
+      [[0, 0, 'bank', 'Union']])
+    let result = tp.plan_route(0, 0, 'Union')
+    result = Cons.to_vec(result)
+    assert result == [[0, 0]]
+ (tests/tests7-advanced-route.rkt:12:4)
+ reason:     assertion failure
+ condition:  [] == [[0, 0]]
+  location...:
+   tests/tests7-common.rkt:257:19
+  context...:
+   /Users/tochukwu/Library/Racket/8.11.1/pkgs/dssl2/private/syntax.rkt:841:7
+   /Applications/Racket v8.11.1/collects/racket/contract/private/arrow-higher-order.rkt:375:33
+   [repeats 1 more time]
+   /Users/tochukwu/Library/Racket/8.11.1/pkgs/dssl2/private/stxparams.rkt:38:2
+   /Applications/Racket v8.11.1/collects/racket/contract/private/arrow-higher-order.rkt:375:33
+   /Users/tochukwu/Library/Racket/8.11.1/pkgs/dssl2/private/syntax.rkt:670:20
+   /Users/tochukwu/Library/Racket/8.11.1/pkgs/dssl2/private/syntax.rkt:911:4
+   /Applications/Racket v8.11.1/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+(63 ms)
+(77 ms)
+(103 ms)
+(76 ms)
+(80 ms)
+(69 ms)
+(102 ms)
+
+Stress Tests
+~~~~~~~~~~~~
+
+     These stress tests check that your `plan_route`
+     implementation uses efficient data structures and
+     algorithms, and does not unnecessarily repeat work.
+
+     Its timeouts are generous enough that any design
+     that is careful about efficiency should come in under
+     time; in-depth optimization is not the point.
+
+     If you fail one of these tests with an "out of time"
+     error, you should check your implementation for gross
+     inefficiencies and/or infinite loops. Don't focus too
+     much on the precise timing.
+
+
+ - Building TripPlanner (10 intersections, 45 roads)... done (89 ms).
+ - Planning route to florist... done (35 ms).
+ - Building TripPlanner (45 intersections, 45 roads)... done (110 ms).
+ - Planning route to florist... done (282 ms).
+
+
+----------------------------------------------------------------------
+running basic nearby tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+running advanced nearby tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+running eight_principles tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+determining overall outcome
+----------------------------------------------------------------------
+
+almost there: passing any four test suites
