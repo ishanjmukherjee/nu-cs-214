@@ -1,0 +1,193 @@
+----------------------------------------------------------------------
+running basic modifiers tests
+----------------------------------------------------------------------
+
+some tests failed
+
+Failed test: exams_modifiers(16, 20) == 1 ; neutral, +1 (tests/tests1-basic-modifiers.rkt:48:0)
+ reason:     assertion failure
+ condition:  2 == 1
+  location...:
+   tests/tests1-basic-modifiers.rkt:49:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: exams_modifiers(4, 8) == -3 ; -2, -1 (tests/tests1-basic-modifiers.rkt:52:0)
+ reason:     assertion failure
+ condition:  -2 == -3
+  location...:
+   tests/tests1-basic-modifiers.rkt:53:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: exams_modifiers(13, 15) == 0 ; neutral, neutral (tests/tests1-basic-modifiers.rkt:54:0)
+ reason:     assertion failure
+ condition:  1 == 0
+  location...:
+   tests/tests1-basic-modifiers.rkt:55:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+
+----------------------------------------------------------------------
+running advanced modifiers tests
+----------------------------------------------------------------------
+
+some tests failed
+
+Failed test: self_evals_modifier: 6 homeworks should error (tests/tests1-advanced-modifiers.rkt:32:0)
+ reason:     assertion failure
+ condition:  did not error as expected
+  location...:
+   tests/tests1-advanced-modifiers.rkt:33:17
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:670:20
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: self_evals_modifier: 4 homeworks should error (tests/tests1-advanced-modifiers.rkt:39:0)
+ reason:     assertion failure
+ condition:  did not error as expected
+  location...:
+   tests/tests1-advanced-modifiers.rkt:40:17
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:670:20
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: self_evals_modifier: 0 homeworks should error (tests/tests1-advanced-modifiers.rkt:44:0)
+ reason:     assertion failure
+ condition:  did not error as expected
+  location...:
+   tests/tests1-advanced-modifiers.rkt:45:17
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:670:20
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+
+----------------------------------------------------------------------
+running basic grades tests
+----------------------------------------------------------------------
+
+some tests failed
+
+Failed test: resubmit_homework 1 correctly updates (tests/tests1-basic-grades.rkt:41:0)
+ reason:     assertion failure
+ condition:  ['got it', 'not yet', 'on the way', 'not yet', 'cannot assess'] == ['not yet', 'almost there', 'on the way', 'not yet', 'cannot assess']
+  location...:
+   tests/tests1-basic-grades.rkt:44:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: resubmit_homework 2 correctly updates (tests/tests1-basic-grades.rkt:45:0)
+ reason:     assertion failure
+ condition:  ['got it', 'almost there', 'got it', 'not yet', 'cannot assess'] == ['got it', 'got it', 'on the way', 'not yet', 'cannot assess']
+  location...:
+   tests/tests1-basic-grades.rkt:48:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: resubmit_homework 3 correctly updates (tests/tests1-basic-grades.rkt:49:0)
+ reason:     assertion failure
+ condition:  ['got it', 'almost there', 'on the way', 'got it', 'cannot assess'] == ['got it', 'almost there', 'got it', 'not yet', 'cannot assess']
+  location...:
+   tests/tests1-basic-grades.rkt:52:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: resubmit_homework 4 correctly updates (tests/tests1-basic-grades.rkt:53:0)
+ reason:     assertion failure
+ condition:  ['got it', 'almost there', 'on the way', 'not yet', 'got it'] == ['got it', 'almost there', 'on the way', 'got it', 'cannot assess']
+  location...:
+   tests/tests1-basic-grades.rkt:56:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: resubmit_homework 5 correctly updates (tests/tests1-basic-grades.rkt:57:0)
+ reason:     an error occurred (but shouldn't have)
+ details:    vec.__index_ref__: out of bounds:
+   got index: 5
+   expected: 0 ≤ index < 5
+  location...:
+   tmp/submission.rkt:197:8
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/stxparams.rkt:38:2
+   /usr/racket/collects/racket/contract/private/arrow-higher-order.rkt:375:33
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:670:20
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+
+----------------------------------------------------------------------
+running advanced grades tests
+----------------------------------------------------------------------
+
+some tests failed
+
+Failed test: apply_modifiers('F', +1) == 'F' # base grade of F -> final grade of F, always (tests/tests1-advanced-grades.rkt:156:0)
+ reason:     assertion failure
+ condition:  'D' == 'F'
+  location...:
+   tests/tests1-advanced-grades.rkt:157:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: apply_modifiers('F', +3) == 'F' # base grade of F -> final grade of F, always (tests/tests1-advanced-grades.rkt:158:0)
+ reason:     assertion failure
+ condition:  'C' == 'F'
+  location...:
+   tests/tests1-advanced-grades.rkt:159:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: letter_grade: example from syllabus: B+ (tests/tests1-advanced-grades.rkt:272:0)
+ reason:     assertion failure
+ condition:  'A-' == 'B+'
+  location...:
+   tests/tests1-advanced-grades.rkt:274:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+Failed test: letter_grade: example from syllabus: B- (tests/tests1-advanced-grades.rkt:276:0)
+ reason:     assertion failure
+ condition:  'B' == 'B-'
+  location...:
+   tests/tests1-advanced-grades.rkt:278:11
+  context...:
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:841:7
+   /home/lokitekone/.local/share/racket/8.10/pkgs/dssl2/private/syntax.rkt:911:4
+   /usr/racket/share/pkgs/sandbox-lib/racket/sandbox.rkt:483:12
+
+
+----------------------------------------------------------------------
+running eight_principles tests
+----------------------------------------------------------------------
+
+all tests passed
+
+----------------------------------------------------------------------
+determining overall outcome
+----------------------------------------------------------------------
+
+not yet
